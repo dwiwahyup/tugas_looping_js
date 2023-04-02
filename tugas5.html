@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <center>
+
+        <h1>Skilvul</h1>
+        
+        <p>Isi dengan jawaban yang benar</p>
+        
+        <button onclick="myFunction()">Mulai</button>
+        
+        <p id="konfirmasi"></p>
+    </center>
+
+    <script>
+        function myFunction() {
+            let text;
+            let nama = prompt("Sebutkan kepanjangan dari nama IB");
+            switch (nama) {
+                case "Impact Byte":
+                    text = "Selamat jawaban kamu benar.";
+                    break;
+                default:
+                    text = "Jawaban kamu kurang tepat..!";
+            }
+            document.getElementById("konfirmasi").innerHTML = text;
+        }
+    </script>
+
+</body>
+
+</html>
