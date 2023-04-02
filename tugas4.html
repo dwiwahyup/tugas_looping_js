@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Konfirmasi Perulangan</title>
+    </head>
+    <body>
+    <script>
+        var perulangan = confirm("Apakah anda mau mengulang");
+        var counter = 0;
+
+        while (perulangan) {
+            var jawaban = confirm ("Apakah anda mau mengulang");
+            counter++;
+            if (jawaban == false) {
+                perulangan = false;
+            }
+        }
+
+        document.write("Perulangan sudah di lakukan sebanyak : " + counter);
+    </script>
+    </body>
+</html>
